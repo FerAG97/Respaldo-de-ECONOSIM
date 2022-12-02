@@ -29,6 +29,7 @@ namespace Econosim
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.button6 = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -229,6 +230,7 @@ namespace Econosim
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox2);
             this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(35, 25);
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;

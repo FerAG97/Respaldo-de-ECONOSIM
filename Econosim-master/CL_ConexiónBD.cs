@@ -82,7 +82,23 @@ namespace Econosim
             sc.Close();
         }
 
-
+        public void cargarDatosAdmin(DataGridView dgv, String tabla, String equipo)
+        {
+            try
+            {
+                {
+                    Convert.ToString(dgv);
+                    da = new SqlDataAdapter("SELECT nombre, apellido, nombre_de_usuario, emali, numero_de_grupo,  FROM " + tabla + ";", conexion);
+                    dt = new DataTable();
+                    da.Fill(dt);
+                    dgv.DataSource = dt;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pueden cargar los datos" + ex.Message);
+            }
+        }
 
 
     }

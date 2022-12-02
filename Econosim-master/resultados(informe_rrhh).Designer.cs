@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(resultados_informe_rrhh_));
             this.panel10 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,9 +53,8 @@
             this.panel10.Controls.Add(this.label4);
             this.panel10.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1688, 123);
+            this.panel10.Size = new System.Drawing.Size(1266, 100);
             this.panel10.TabIndex = 64;
             // 
             // label2
@@ -63,9 +63,10 @@
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1529, 39);
+            this.label2.Location = new System.Drawing.Point(1147, 32);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 36);
+            this.label2.Size = new System.Drawing.Size(109, 29);
             this.label2.TabIndex = 9;
             this.label2.Text = "Equipos";
             // 
@@ -75,9 +76,10 @@
             this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(35, 39);
+            this.label4.Location = new System.Drawing.Point(26, 32);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 36);
+            this.label4.Size = new System.Drawing.Size(87, 29);
             this.label4.TabIndex = 8;
             this.label4.Text = "Volver";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -99,8 +101,7 @@
             this.dataGridView1.ColumnHeadersHeight = 25;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.dataGridView1.Location = new System.Drawing.Point(41, 167);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(31, 136);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -120,7 +121,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(490, 223);
+            this.dataGridView1.Size = new System.Drawing.Size(368, 181);
             this.dataGridView1.TabIndex = 65;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
@@ -129,9 +130,10 @@
             this.Almacen.AutoSize = true;
             this.Almacen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Almacen.ForeColor = System.Drawing.Color.White;
-            this.Almacen.Location = new System.Drawing.Point(812, 167);
+            this.Almacen.Location = new System.Drawing.Point(609, 136);
+            this.Almacen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Almacen.Name = "Almacen";
-            this.Almacen.Size = new System.Drawing.Size(69, 20);
+            this.Almacen.Size = new System.Drawing.Size(58, 17);
             this.Almacen.TabIndex = 67;
             this.Almacen.Text = "Fianza: ";
             // 
@@ -140,9 +142,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(812, 217);
+            this.label5.Location = new System.Drawing.Point(609, 176);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 20);
+            this.label5.Size = new System.Drawing.Size(86, 17);
             this.label5.TabIndex = 69;
             this.label5.Text = "Distribucion:";
             // 
@@ -151,9 +154,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(812, 259);
+            this.label1.Location = new System.Drawing.Point(609, 210);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 20);
+            this.label1.Size = new System.Drawing.Size(136, 17);
             this.label1.TabIndex = 70;
             this.label1.Text = "Recursos Humanos:";
             // 
@@ -162,9 +166,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(1035, 153);
+            this.label3.Location = new System.Drawing.Point(776, 124);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 34);
+            this.label3.Size = new System.Drawing.Size(19, 27);
             this.label3.TabIndex = 71;
             this.label3.Text = ".";
             // 
@@ -173,9 +178,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(1035, 203);
+            this.label6.Location = new System.Drawing.Point(776, 165);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(24, 34);
+            this.label6.Size = new System.Drawing.Size(19, 27);
             this.label6.TabIndex = 72;
             this.label6.Text = ".";
             // 
@@ -184,18 +190,19 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(1035, 248);
+            this.label9.Location = new System.Drawing.Point(776, 202);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(33, 34);
+            this.label9.Size = new System.Drawing.Size(26, 27);
             this.label9.TabIndex = 74;
             this.label9.Text = "0";
             // 
             // resultados_informe_rrhh_
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.ClientSize = new System.Drawing.Size(1685, 814);
+            this.ClientSize = new System.Drawing.Size(1028, 609);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
@@ -204,8 +211,9 @@
             this.Controls.Add(this.Almacen);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel10);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(35, 25);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "resultados_informe_rrhh_";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "resultados_informe_rrhh_";

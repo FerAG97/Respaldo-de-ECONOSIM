@@ -128,10 +128,25 @@ namespace Econosim
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            label1.Text = dataGridView1.SelectedCells[0].Value.ToString();
+            /*label1.Text = dataGridView1.SelectedCells[0].Value.ToString();
             label2.Text = dataGridView1.SelectedCells[1].Value.ToString();
             label4.Text = dataGridView1.SelectedCells[2].Value.ToString();
-            textBox1.Text = dataGridView1.SelectedCells[3].Value.ToString();
+            textBox1.Text = dataGridView1.SelectedCells[3].Value.ToString();*/
+            label1.Text = dataGridView1.SelectedCells[0].Value.ToString();
+            label4.Text = dataGridView1.SelectedCells[2].Value.ToString();
+            textBox1.Text = dataGridView1.SelectedCells[1].Value.ToString();
+
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+
         }
     }
 }

@@ -29,6 +29,7 @@ namespace Econosim
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearUsuario));
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtConfirmacion = new System.Windows.Forms.TextBox();
@@ -99,6 +100,8 @@ namespace Econosim
             this.txtConfirmacion.Size = new System.Drawing.Size(310, 24);
             this.txtConfirmacion.TabIndex = 7;
             this.txtConfirmacion.UseSystemPasswordChar = true;
+            this.txtConfirmacion.TextChanged += new System.EventHandler(this.txtConfirmacion_TextChanged);
+            this.txtConfirmacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtConfirmacion_KeyPress);
             // 
             // cmbTipoUsuario
             // 
@@ -129,6 +132,7 @@ namespace Econosim
             this.txtNumEquipo.Name = "txtNumEquipo";
             this.txtNumEquipo.Size = new System.Drawing.Size(60, 24);
             this.txtNumEquipo.TabIndex = 5;
+            this.txtNumEquipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumEquipo_KeyPress);
             // 
             // label6
             // 
@@ -149,6 +153,8 @@ namespace Econosim
             this.txtNuevaContra.Size = new System.Drawing.Size(310, 24);
             this.txtNuevaContra.TabIndex = 3;
             this.txtNuevaContra.UseSystemPasswordChar = true;
+            this.txtNuevaContra.TextChanged += new System.EventHandler(this.txtNuevaContra_TextChanged);
+            this.txtNuevaContra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNuevaContra_KeyPress);
             // 
             // txtNuevoUser
             // 
@@ -157,6 +163,7 @@ namespace Econosim
             this.txtNuevoUser.Name = "txtNuevoUser";
             this.txtNuevoUser.Size = new System.Drawing.Size(310, 24);
             this.txtNuevoUser.TabIndex = 2;
+            this.txtNuevoUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNuevoUser_KeyPress);
             // 
             // Label5
             // 
@@ -200,7 +207,6 @@ namespace Econosim
             this.GroupBox1.TabIndex = 5;
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "DATOS PERSONALES";
-
             // 
             // txtNuevoCorreo
             // 
@@ -209,6 +215,7 @@ namespace Econosim
             this.txtNuevoCorreo.Name = "txtNuevoCorreo";
             this.txtNuevoCorreo.Size = new System.Drawing.Size(311, 24);
             this.txtNuevoCorreo.TabIndex = 5;
+            this.txtNuevoCorreo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNuevoCorreo_KeyPress);
             // 
             // txtNuevoApellido
             // 
@@ -217,6 +224,7 @@ namespace Econosim
             this.txtNuevoApellido.Name = "txtNuevoApellido";
             this.txtNuevoApellido.Size = new System.Drawing.Size(311, 24);
             this.txtNuevoApellido.TabIndex = 4;
+            this.txtNuevoApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNuevoApellido_KeyPress);
             // 
             // txtNuevoNombre
             // 
@@ -225,6 +233,7 @@ namespace Econosim
             this.txtNuevoNombre.Name = "txtNuevoNombre";
             this.txtNuevoNombre.Size = new System.Drawing.Size(311, 24);
             this.txtNuevoNombre.TabIndex = 3;
+            this.txtNuevoNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNuevoNombre_KeyPress);
             // 
             // Label3
             // 
@@ -247,7 +256,6 @@ namespace Econosim
             this.Label2.Size = new System.Drawing.Size(58, 13);
             this.Label2.TabIndex = 1;
             this.Label2.Text = "Apellidos";
-
             // 
             // Label1
             // 
@@ -327,6 +335,7 @@ namespace Econosim
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.GroupBox2);
             this.Controls.Add(this.GroupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CrearUsuario";
             this.Text = "Crear Usuario";
             this.Load += new System.EventHandler(this.CrearUsuario_Load);

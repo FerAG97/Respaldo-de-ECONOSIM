@@ -79,7 +79,6 @@ namespace Econosim
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 61;
             this.pictureBox5.TabStop = false;
-
             // 
             // pictureBox4
             // 
@@ -116,7 +115,6 @@ namespace Econosim
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 58;
             this.pictureBox2.TabStop = false;
- 
             // 
             // pictureBox1
             // 
@@ -193,7 +191,7 @@ namespace Econosim
             this.tabFechas.Margin = new System.Windows.Forms.Padding(2);
             this.tabFechas.Name = "tabFechas";
             this.tabFechas.Padding = new System.Windows.Forms.Padding(2);
-            this.tabFechas.Size = new System.Drawing.Size(499, 273);
+            this.tabFechas.Size = new System.Drawing.Size(581, 273);
             this.tabFechas.TabIndex = 3;
             this.tabFechas.Text = "Fechas";
             this.tabFechas.UseVisualStyleBackColor = true;
@@ -254,7 +252,7 @@ namespace Econosim
             this.Location = new System.Drawing.Point(35, 25);
             this.Name = "Equipos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Equuipos";
+            this.Text = "Equipos";
             this.Shown += new System.EventHandler(this.Equipos_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

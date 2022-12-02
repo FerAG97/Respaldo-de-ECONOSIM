@@ -28,14 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdmParticipantes));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btneliminarAdm = new Materiasles_1.circlebutton();
             this.btnmodificarAdm = new Materiasles_1.circlebutton();
             this.btnagregarAdm = new Materiasles_1.circlebutton();
             this.btnlimpiarAdm = new Materiasles_1.circlebutton();
+            this.txtapellidoAdm = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.cmbTipodeUsu = new System.Windows.Forms.ComboBox();
             this.txtnombreAdm = new System.Windows.Forms.TextBox();
@@ -48,7 +50,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtemailAdm = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtapellidoAdm = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvparticipantesAdm = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
@@ -169,6 +170,15 @@
             this.btnlimpiarAdm.UseVisualStyleBackColor = false;
             this.btnlimpiarAdm.Click += new System.EventHandler(this.circlebutton1_Click);
             // 
+            // txtapellidoAdm
+            // 
+            this.txtapellidoAdm.Location = new System.Drawing.Point(197, 66);
+            this.txtapellidoAdm.Margin = new System.Windows.Forms.Padding(2);
+            this.txtapellidoAdm.Multiline = true;
+            this.txtapellidoAdm.Name = "txtapellidoAdm";
+            this.txtapellidoAdm.Size = new System.Drawing.Size(180, 26);
+            this.txtapellidoAdm.TabIndex = 4;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -192,7 +202,6 @@
             this.cmbTipodeUsu.Name = "cmbTipodeUsu";
             this.cmbTipodeUsu.Size = new System.Drawing.Size(180, 21);
             this.cmbTipodeUsu.TabIndex = 17;
-
             // 
             // txtnombreAdm
             // 
@@ -301,15 +310,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Email";
             // 
-            // txtapellidoAdm
-            // 
-            this.txtapellidoAdm.Location = new System.Drawing.Point(197, 66);
-            this.txtapellidoAdm.Margin = new System.Windows.Forms.Padding(2);
-            this.txtapellidoAdm.Multiline = true;
-            this.txtapellidoAdm.Name = "txtapellidoAdm";
-            this.txtapellidoAdm.Size = new System.Drawing.Size(180, 26);
-            this.txtapellidoAdm.TabIndex = 4;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -326,14 +326,14 @@
             // 
             this.dgvparticipantesAdm.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvparticipantesAdm.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(195)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvparticipantesAdm.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(195)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvparticipantesAdm.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvparticipantesAdm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvparticipantesAdm.EnableHeadersVisualStyles = false;
             this.dgvparticipantesAdm.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
@@ -342,27 +342,26 @@
             this.dgvparticipantesAdm.Name = "dgvparticipantesAdm";
             this.dgvparticipantesAdm.ReadOnly = true;
             this.dgvparticipantesAdm.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(195)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvparticipantesAdm.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(195)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvparticipantesAdm.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvparticipantesAdm.RowHeadersWidth = 51;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvparticipantesAdm.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvparticipantesAdm.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvparticipantesAdm.RowTemplate.Height = 24;
             this.dgvparticipantesAdm.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvparticipantesAdm.Size = new System.Drawing.Size(490, 366);
             this.dgvparticipantesAdm.TabIndex = 3;
             this.dgvparticipantesAdm.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvparticipantesAdm_CellClick);
-           
             // 
             // label7
             // 
@@ -423,6 +422,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dgvparticipantesAdm);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(35, 25);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AdmParticipantes";

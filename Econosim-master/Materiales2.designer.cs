@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Edicion));
             this.panel9 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,7 +45,7 @@
             this.circlebutton4 = new Materiasles_1.circlebutton();
             this.circlebutton3 = new Materiasles_1.circlebutton();
             this.circlebutton2 = new Materiasles_1.circlebutton();
-            this.button19 = new System.Windows.Forms.Button();
+            this.btnsubir = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txtfecha = new System.Windows.Forms.TextBox();
@@ -200,7 +201,7 @@
             this.panel2.Controls.Add(this.circlebutton4);
             this.panel2.Controls.Add(this.circlebutton3);
             this.panel2.Controls.Add(this.circlebutton2);
-            this.panel2.Controls.Add(this.button19);
+            this.panel2.Controls.Add(this.btnsubir);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.txtfecha);
@@ -222,9 +223,9 @@
             // 
             // textruta
             // 
-            this.textruta.Location = new System.Drawing.Point(310, 279);
+            this.textruta.Location = new System.Drawing.Point(172, 282);
             this.textruta.Name = "textruta";
-            this.textruta.Size = new System.Drawing.Size(100, 20);
+            this.textruta.Size = new System.Drawing.Size(160, 20);
             this.textruta.TabIndex = 24;
             // 
             // circlebutton4
@@ -283,15 +284,19 @@
             this.circlebutton2.UseVisualStyleBackColor = false;
             this.circlebutton2.Click += new System.EventHandler(this.circlebutton2_Click);
             // 
-            // button19
+            // btnsubir
             // 
-            this.button19.Location = new System.Drawing.Point(428, 279);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(44, 23);
-            this.button19.TabIndex = 17;
-            this.button19.Text = "...";
-            this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
+            this.btnsubir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
+            this.btnsubir.FlatAppearance.BorderSize = 0;
+            this.btnsubir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsubir.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnsubir.Location = new System.Drawing.Point(360, 280);
+            this.btnsubir.Name = "btnsubir";
+            this.btnsubir.Size = new System.Drawing.Size(44, 23);
+            this.btnsubir.TabIndex = 17;
+            this.btnsubir.Text = "...";
+            this.btnsubir.UseVisualStyleBackColor = false;
+            this.btnsubir.Click += new System.EventHandler(this.button19_Click);
             // 
             // label15
             // 
@@ -434,6 +439,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel9);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(35, 25);
             this.Name = "Edicion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
@@ -467,7 +473,7 @@
         private System.Windows.Forms.TextBox txtfecha;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtdescripcion;
-        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button btnsubir;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;

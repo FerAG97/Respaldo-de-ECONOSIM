@@ -73,5 +73,16 @@ namespace Econosim
             resultados_Informacion_De_Costos.Show();
             this.Hide();
         }
+
+        private void circlebutton8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void REPORTE_Click(object sender, EventArgs e)
+        {
+            FormReport newForm = new FormReport();
+            newForm.Show();
+        }
     }
 }

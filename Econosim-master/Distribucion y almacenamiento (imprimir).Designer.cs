@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Distribucion_y_almacenamiento__imprimir_));
             this.panel5 = new System.Windows.Forms.Panel();
             this.lbl_espere = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,10 +49,9 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(195)))));
-            this.panel5.Location = new System.Drawing.Point(-8, -3);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Location = new System.Drawing.Point(-6, -2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1256, 99);
+            this.panel5.Size = new System.Drawing.Size(942, 80);
             this.panel5.TabIndex = 58;
             // 
             // lbl_espere
@@ -59,9 +59,10 @@
             this.lbl_espere.AutoSize = true;
             this.lbl_espere.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_espere.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_espere.Location = new System.Drawing.Point(3, 364);
+            this.lbl_espere.Location = new System.Drawing.Point(2, 296);
+            this.lbl_espere.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_espere.Name = "lbl_espere";
-            this.lbl_espere.Size = new System.Drawing.Size(104, 39);
+            this.lbl_espere.Size = new System.Drawing.Size(82, 31);
             this.lbl_espere.TabIndex = 74;
             this.lbl_espere.Text = "label3";
             this.lbl_espere.Visible = false;
@@ -71,9 +72,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(329, 122);
+            this.label1.Location = new System.Drawing.Point(247, 99);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 29);
+            this.label1.Size = new System.Drawing.Size(143, 24);
             this.label1.TabIndex = 73;
             this.label1.Text = "NombreGrupo";
             // 
@@ -82,9 +84,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(23, 117);
+            this.label2.Location = new System.Drawing.Point(17, 95);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(251, 29);
+            this.label2.Size = new System.Drawing.Size(202, 24);
             this.label2.TabIndex = 70;
             this.label2.Text = "Menu de Desiciones";
             // 
@@ -95,10 +98,10 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(987, 117);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(740, 95);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(61, 42);
+            this.button2.Size = new System.Drawing.Size(46, 34);
             this.button2.TabIndex = 72;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -110,10 +113,10 @@
             this.Imprimir.FlatAppearance.BorderSize = 0;
             this.Imprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Imprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Imprimir.Location = new System.Drawing.Point(926, 117);
-            this.Imprimir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Imprimir.Location = new System.Drawing.Point(694, 95);
+            this.Imprimir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Imprimir.Name = "Imprimir";
-            this.Imprimir.Size = new System.Drawing.Size(55, 42);
+            this.Imprimir.Size = new System.Drawing.Size(41, 34);
             this.Imprimir.TabIndex = 69;
             this.Imprimir.UseVisualStyleBackColor = true;
             this.Imprimir.Click += new System.EventHandler(this.Imprimir_Click);
@@ -126,19 +129,20 @@
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.groupBox1.Location = new System.Drawing.Point(305, 147);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Location = new System.Drawing.Point(229, 119);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(843, 534);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(632, 434);
             this.groupBox1.TabIndex = 71;
             this.groupBox1.TabStop = false;
             // 
             // btn_eliminar
             // 
-            this.btn_eliminar.Location = new System.Drawing.Point(360, 456);
+            this.btn_eliminar.Location = new System.Drawing.Point(270, 370);
+            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(160, 55);
+            this.btn_eliminar.Size = new System.Drawing.Size(120, 45);
             this.btn_eliminar.TabIndex = 3;
             this.btn_eliminar.Text = "eliminar";
             this.btn_eliminar.UseVisualStyleBackColor = true;
@@ -146,9 +150,10 @@
             // 
             // btn_cancelar
             // 
-            this.btn_cancelar.Location = new System.Drawing.Point(666, 456);
+            this.btn_cancelar.Location = new System.Drawing.Point(500, 370);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_cancelar.Name = "btn_cancelar";
-            this.btn_cancelar.Size = new System.Drawing.Size(149, 55);
+            this.btn_cancelar.Size = new System.Drawing.Size(112, 45);
             this.btn_cancelar.TabIndex = 2;
             this.btn_cancelar.Text = "cancelar";
             this.btn_cancelar.UseVisualStyleBackColor = true;
@@ -156,9 +161,10 @@
             // 
             // btn_confirmar
             // 
-            this.btn_confirmar.Location = new System.Drawing.Point(29, 456);
+            this.btn_confirmar.Location = new System.Drawing.Point(22, 370);
+            this.btn_confirmar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_confirmar.Name = "btn_confirmar";
-            this.btn_confirmar.Size = new System.Drawing.Size(171, 55);
+            this.btn_confirmar.Size = new System.Drawing.Size(128, 45);
             this.btn_confirmar.TabIndex = 1;
             this.btn_confirmar.Text = "confirmar";
             this.btn_confirmar.UseVisualStyleBackColor = true;
@@ -167,13 +173,14 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(29, 32);
+            this.dataGridView1.Location = new System.Drawing.Point(22, 26);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(786, 407);
+            this.dataGridView1.Size = new System.Drawing.Size(590, 331);
             this.dataGridView1.TabIndex = 0;
             // 
             // button6
@@ -183,10 +190,10 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(23, 302);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button6.Location = new System.Drawing.Point(17, 245);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(276, 58);
+            this.button6.Size = new System.Drawing.Size(207, 47);
             this.button6.TabIndex = 50;
             this.button6.Text = "Distribucion y almacenamiento";
             this.button6.UseVisualStyleBackColor = false;
@@ -197,10 +204,10 @@
             // 
             // Distribucion_y_almacenamiento__imprimir_
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.ClientSize = new System.Drawing.Size(1245, 695);
+            this.ClientSize = new System.Drawing.Size(934, 565);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.lbl_espere);
             this.Controls.Add(this.label1);
@@ -209,6 +216,8 @@
             this.Controls.Add(this.Imprimir);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Distribucion_y_almacenamiento__imprimir_";
             this.Text = "Distribucion_y_almacenamiento__imprimir_";
             this.Load += new System.EventHandler(this.Distribucion_y_almacenamiento__imprimir__Load);

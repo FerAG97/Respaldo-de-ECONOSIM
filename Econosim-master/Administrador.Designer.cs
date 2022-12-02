@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Administrador));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.circlebutton3 = new Materiasles_1.circlebutton();
+            this.circlebutton2 = new Materiasles_1.circlebutton();
+            this.circlebutton1 = new Materiasles_1.circlebutton();
+            this.circlebutton5 = new Materiasles_1.circlebutton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,10 +44,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.circlebutton5 = new Materiasles_1.circlebutton();
-            this.circlebutton1 = new Materiasles_1.circlebutton();
-            this.circlebutton2 = new Materiasles_1.circlebutton();
-            this.circlebutton3 = new Materiasles_1.circlebutton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel9.SuspendLayout();
@@ -69,6 +69,79 @@
             this.panel2.Size = new System.Drawing.Size(626, 441);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // circlebutton3
+            // 
+            this.circlebutton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
+            this.circlebutton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
+            this.circlebutton3.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.circlebutton3.BorderRadius = 19;
+            this.circlebutton3.BorderSize = 0;
+            this.circlebutton3.FlatAppearance.BorderSize = 0;
+            this.circlebutton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.circlebutton3.ForeColor = System.Drawing.Color.White;
+            this.circlebutton3.Location = new System.Drawing.Point(17, 318);
+            this.circlebutton3.Name = "circlebutton3";
+            this.circlebutton3.Size = new System.Drawing.Size(156, 58);
+            this.circlebutton3.TabIndex = 25;
+            this.circlebutton3.Text = "DOCUMENTOS";
+            this.circlebutton3.TextColor = System.Drawing.Color.White;
+            this.circlebutton3.UseVisualStyleBackColor = false;
+            // 
+            // circlebutton2
+            // 
+            this.circlebutton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
+            this.circlebutton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
+            this.circlebutton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.circlebutton2.BorderRadius = 19;
+            this.circlebutton2.BorderSize = 0;
+            this.circlebutton2.FlatAppearance.BorderSize = 0;
+            this.circlebutton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.circlebutton2.ForeColor = System.Drawing.Color.White;
+            this.circlebutton2.Location = new System.Drawing.Point(17, 235);
+            this.circlebutton2.Name = "circlebutton2";
+            this.circlebutton2.Size = new System.Drawing.Size(156, 58);
+            this.circlebutton2.TabIndex = 24;
+            this.circlebutton2.Text = "PLATAFORMA";
+            this.circlebutton2.TextColor = System.Drawing.Color.White;
+            this.circlebutton2.UseVisualStyleBackColor = false;
+            // 
+            // circlebutton1
+            // 
+            this.circlebutton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
+            this.circlebutton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
+            this.circlebutton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.circlebutton1.BorderRadius = 19;
+            this.circlebutton1.BorderSize = 0;
+            this.circlebutton1.FlatAppearance.BorderSize = 0;
+            this.circlebutton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.circlebutton1.ForeColor = System.Drawing.Color.White;
+            this.circlebutton1.Location = new System.Drawing.Point(17, 166);
+            this.circlebutton1.Name = "circlebutton1";
+            this.circlebutton1.Size = new System.Drawing.Size(156, 58);
+            this.circlebutton1.TabIndex = 23;
+            this.circlebutton1.Text = "PARTICIPANTES";
+            this.circlebutton1.TextColor = System.Drawing.Color.White;
+            this.circlebutton1.UseVisualStyleBackColor = false;
+            // 
+            // circlebutton5
+            // 
+            this.circlebutton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
+            this.circlebutton5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
+            this.circlebutton5.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.circlebutton5.BorderRadius = 19;
+            this.circlebutton5.BorderSize = 0;
+            this.circlebutton5.FlatAppearance.BorderSize = 0;
+            this.circlebutton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.circlebutton5.ForeColor = System.Drawing.Color.White;
+            this.circlebutton5.Location = new System.Drawing.Point(17, 86);
+            this.circlebutton5.Name = "circlebutton5";
+            this.circlebutton5.Size = new System.Drawing.Size(156, 58);
+            this.circlebutton5.TabIndex = 22;
+            this.circlebutton5.Text = "PERFIL";
+            this.circlebutton5.TextColor = System.Drawing.Color.White;
+            this.circlebutton5.UseVisualStyleBackColor = false;
+            this.circlebutton5.Click += new System.EventHandler(this.circlebutton5_Click);
             // 
             // pictureBox1
             // 
@@ -190,79 +263,6 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 56;
             this.pictureBox7.TabStop = false;
-            // 
-            // circlebutton5
-            // 
-            this.circlebutton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
-            this.circlebutton5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
-            this.circlebutton5.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.circlebutton5.BorderRadius = 19;
-            this.circlebutton5.BorderSize = 0;
-            this.circlebutton5.FlatAppearance.BorderSize = 0;
-            this.circlebutton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circlebutton5.ForeColor = System.Drawing.Color.White;
-            this.circlebutton5.Location = new System.Drawing.Point(17, 86);
-            this.circlebutton5.Name = "circlebutton5";
-            this.circlebutton5.Size = new System.Drawing.Size(156, 58);
-            this.circlebutton5.TabIndex = 22;
-            this.circlebutton5.Text = "PERFIL";
-            this.circlebutton5.TextColor = System.Drawing.Color.White;
-            this.circlebutton5.UseVisualStyleBackColor = false;
-            this.circlebutton5.Click += new System.EventHandler(this.circlebutton5_Click);
-            // 
-            // circlebutton1
-            // 
-            this.circlebutton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
-            this.circlebutton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
-            this.circlebutton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.circlebutton1.BorderRadius = 19;
-            this.circlebutton1.BorderSize = 0;
-            this.circlebutton1.FlatAppearance.BorderSize = 0;
-            this.circlebutton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circlebutton1.ForeColor = System.Drawing.Color.White;
-            this.circlebutton1.Location = new System.Drawing.Point(17, 166);
-            this.circlebutton1.Name = "circlebutton1";
-            this.circlebutton1.Size = new System.Drawing.Size(156, 58);
-            this.circlebutton1.TabIndex = 23;
-            this.circlebutton1.Text = "PARTICIPANTES";
-            this.circlebutton1.TextColor = System.Drawing.Color.White;
-            this.circlebutton1.UseVisualStyleBackColor = false;
-            // 
-            // circlebutton2
-            // 
-            this.circlebutton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
-            this.circlebutton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
-            this.circlebutton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.circlebutton2.BorderRadius = 19;
-            this.circlebutton2.BorderSize = 0;
-            this.circlebutton2.FlatAppearance.BorderSize = 0;
-            this.circlebutton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circlebutton2.ForeColor = System.Drawing.Color.White;
-            this.circlebutton2.Location = new System.Drawing.Point(17, 235);
-            this.circlebutton2.Name = "circlebutton2";
-            this.circlebutton2.Size = new System.Drawing.Size(156, 58);
-            this.circlebutton2.TabIndex = 24;
-            this.circlebutton2.Text = "PLATAFORMA";
-            this.circlebutton2.TextColor = System.Drawing.Color.White;
-            this.circlebutton2.UseVisualStyleBackColor = false;
-            // 
-            // circlebutton3
-            // 
-            this.circlebutton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
-            this.circlebutton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
-            this.circlebutton3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.circlebutton3.BorderRadius = 19;
-            this.circlebutton3.BorderSize = 0;
-            this.circlebutton3.FlatAppearance.BorderSize = 0;
-            this.circlebutton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circlebutton3.ForeColor = System.Drawing.Color.White;
-            this.circlebutton3.Location = new System.Drawing.Point(17, 318);
-            this.circlebutton3.Name = "circlebutton3";
-            this.circlebutton3.Size = new System.Drawing.Size(156, 58);
-            this.circlebutton3.TabIndex = 25;
-            this.circlebutton3.Text = "DOCUMENTOS";
-            this.circlebutton3.TextColor = System.Drawing.Color.White;
-            this.circlebutton3.UseVisualStyleBackColor = false;
             // 
             // Administrador
             // 
