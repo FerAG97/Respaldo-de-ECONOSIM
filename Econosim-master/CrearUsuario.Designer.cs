@@ -271,11 +271,11 @@ namespace Econosim
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.LightCoral;
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(195)))));
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.Color.Black;
+            this.btnCancelar.ForeColor = System.Drawing.Color.White;
             this.btnCancelar.Image = global::Econosim.Properties.Resources.Arrow_previous_icon;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.Location = new System.Drawing.Point(351, 376);
@@ -291,11 +291,11 @@ namespace Econosim
             // 
             // btnAceptarCrear
             // 
-            this.btnAceptarCrear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(221)))), ((int)(((byte)(59)))));
+            this.btnAceptarCrear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(195)))));
             this.btnAceptarCrear.FlatAppearance.BorderSize = 0;
             this.btnAceptarCrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptarCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptarCrear.ForeColor = System.Drawing.Color.Black;
+            this.btnAceptarCrear.ForeColor = System.Drawing.Color.White;
             this.btnAceptarCrear.Image = global::Econosim.Properties.Resources.Check_3_icon;
             this.btnAceptarCrear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAceptarCrear.Location = new System.Drawing.Point(190, 376);
@@ -309,11 +309,11 @@ namespace Econosim
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(221)))), ((int)(((byte)(59)))));
+            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(195)))));
             this.btnLimpiar.FlatAppearance.BorderSize = 0;
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.ForeColor = System.Drawing.Color.Black;
+            this.btnLimpiar.ForeColor = System.Drawing.Color.White;
             this.btnLimpiar.Image = global::Econosim.Properties.Resources.recycle_bin_icon;
             this.btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLimpiar.Location = new System.Drawing.Point(22, 376);

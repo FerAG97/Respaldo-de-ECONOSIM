@@ -95,7 +95,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(202, 24);
             this.label2.TabIndex = 52;
-            this.label2.Text = "Menu de Desiciones";
+            this.label2.Text = "Menu de Decisiones\r\n";
             // 
             // button7
             // 
@@ -436,7 +436,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Decisiones_Finanzas_y_flujo_de_caja_";
-            this.Text = "Decisiones_Finanzas_y_flujo_de_caja_";
+            this.Text = "Decisiones Finanza y Flujo de caja";
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.groupBox1.ResumeLayout(false);

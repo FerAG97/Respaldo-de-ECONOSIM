@@ -64,7 +64,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(202, 24);
             this.label2.TabIndex = 52;
-            this.label2.Text = "Menu de Desiciones";
+            this.label2.Text = "Menu de Decisiones";
             // 
             // button3
             // 
@@ -74,7 +74,7 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(105, 298);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(207, 47);
             this.button3.TabIndex = 47;
@@ -89,7 +89,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(764, 76);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(46, 34);
             this.button2.TabIndex = 46;
@@ -104,7 +104,7 @@
             this.Imprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Imprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Imprimir.Location = new System.Drawing.Point(719, 76);
-            this.Imprimir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Imprimir.Margin = new System.Windows.Forms.Padding(2);
             this.Imprimir.Name = "Imprimir";
             this.Imprimir.Size = new System.Drawing.Size(41, 34);
             this.Imprimir.TabIndex = 45;
@@ -132,9 +132,9 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.groupBox1.Location = new System.Drawing.Point(338, 110);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(632, 434);
             this.groupBox1.TabIndex = 43;
             this.groupBox1.TabStop = false;
@@ -143,7 +143,7 @@
             // btn_eliminar
             // 
             this.btn_eliminar.Location = new System.Drawing.Point(270, 370);
-            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_eliminar.Name = "btn_eliminar";
             this.btn_eliminar.Size = new System.Drawing.Size(120, 45);
             this.btn_eliminar.TabIndex = 3;
@@ -154,7 +154,7 @@
             // btn_cancelar
             // 
             this.btn_cancelar.Location = new System.Drawing.Point(500, 370);
-            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(112, 45);
             this.btn_cancelar.TabIndex = 2;
@@ -165,7 +165,7 @@
             // btn_confirmar
             // 
             this.btn_confirmar.Location = new System.Drawing.Point(22, 370);
-            this.btn_confirmar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_confirmar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_confirmar.Name = "btn_confirmar";
             this.btn_confirmar.Size = new System.Drawing.Size(128, 45);
             this.btn_confirmar.TabIndex = 1;
@@ -177,7 +177,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(22, 26);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
@@ -221,7 +221,7 @@
             this.Controls.Add(this.panel5);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "compesacion_y_beneficios__imprimir_";
             this.Text = "compesacion_y_beneficios__imprimir_";
             this.Load += new System.EventHandler(this.compesacion_y_beneficios__imprimir__Load);

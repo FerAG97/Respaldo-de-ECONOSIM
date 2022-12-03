@@ -62,7 +62,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(202, 24);
             this.label2.TabIndex = 51;
-            this.label2.Text = "Menu de Desiciones";
+            this.label2.Text = "Menu de Decisiones";
             // 
             // button7
             // 
@@ -109,7 +109,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(207, 47);
             this.button5.TabIndex = 48;
-            this.button5.Text = "Instalaciones de produccion";
+            this.button5.Text = "Instalaciones de producción";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -125,7 +125,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(207, 47);
             this.button4.TabIndex = 47;
-            this.button4.Text = "Produccion de Marca";
+            this.button4.Text = "Producción de Marca";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // button3
@@ -309,7 +309,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Decisiones_Produccion_de_Marca_";
-            this.Text = "Decisiones_Produccion_de_Marca_";
+            this.Text = "Decisiones Produccion de Marca";
             this.Load += new System.EventHandler(this.Decisiones_Produccion_de_Marca__Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

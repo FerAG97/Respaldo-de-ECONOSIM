@@ -68,7 +68,7 @@ namespace Econosim
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(202, 24);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Menu de Desiciones";
+            this.label2.Text = "Menu de Decisiones\r\n";
             // 
             // label1
             // 

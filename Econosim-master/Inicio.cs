@@ -146,8 +146,6 @@ namespace Econosim
                 DataRow usuario = dt.Rows[0];
 
                 this.Hide();
-                /*using (Menu ventanaLogin = new Menu(txtUsuario.Text))
-                    ventanaLogin.ShowDialog();*/
                Menu ventanaLogin = new Menu();
                ventanaLogin.ShowDialog();
             

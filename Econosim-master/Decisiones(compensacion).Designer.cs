@@ -52,6 +52,7 @@
             this.circlebutton5 = new Materiasles_1.circlebutton();
             this.circlebutton6 = new Materiasles_1.circlebutton();
             this.Imprimir = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.SuspendLayout();
@@ -66,7 +67,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(202, 24);
             this.label2.TabIndex = 35;
-            this.label2.Text = "Menu de Desiciones";
+            this.label2.Text = "Menu de Decisiones";
             // 
             // label1
             // 
@@ -82,6 +83,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.circlebutton2);
@@ -109,6 +111,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(150, 29);
             this.textBox4.TabIndex = 26;
+            this.textBox4.Visible = false;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // dateTimePicker1
@@ -143,6 +146,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(32, 193);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
@@ -359,6 +363,16 @@
             this.Imprimir.UseVisualStyleBackColor = true;
             this.Imprimir.Click += new System.EventHandler(this.Imprimir_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(330, 24);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 24);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Fecha";
+            // 
             // Decisiones_compensacion_
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -414,5 +428,6 @@
         private Materiasles_1.circlebutton circlebutton6;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -81,7 +81,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(202, 24);
             this.label2.TabIndex = 51;
-            this.label2.Text = "Menu de Desiciones";
+            this.label2.Text = "Menu de Decisiones";
             // 
             // button7
             // 
@@ -92,7 +92,7 @@
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Location = new System.Drawing.Point(21, 354);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(207, 47);
             this.button7.TabIndex = 50;
@@ -108,7 +108,7 @@
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Location = new System.Drawing.Point(19, 293);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(207, 47);
             this.button6.TabIndex = 49;
@@ -124,7 +124,7 @@
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(19, 232);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(207, 47);
             this.button5.TabIndex = 48;
@@ -140,7 +140,7 @@
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(19, 166);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(207, 47);
             this.button4.TabIndex = 47;
@@ -156,7 +156,7 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(19, 106);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(207, 47);
             this.button3.TabIndex = 62;
@@ -186,9 +186,9 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.groupBox1.Location = new System.Drawing.Point(254, 89);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(472, 323);
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
@@ -196,7 +196,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(16, 178);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 32);
             this.button1.TabIndex = 6;
@@ -217,7 +217,7 @@
             // txt_localizacion
             // 
             this.txt_localizacion.Location = new System.Drawing.Point(16, 132);
-            this.txt_localizacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_localizacion.Margin = new System.Windows.Forms.Padding(2);
             this.txt_localizacion.Name = "txt_localizacion";
             this.txt_localizacion.Size = new System.Drawing.Size(193, 29);
             this.txt_localizacion.TabIndex = 2;
@@ -236,7 +236,7 @@
             // txt_almacenamiento
             // 
             this.txt_almacenamiento.Location = new System.Drawing.Point(16, 66);
-            this.txt_almacenamiento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_almacenamiento.Margin = new System.Windows.Forms.Padding(2);
             this.txt_almacenamiento.Name = "txt_almacenamiento";
             this.txt_almacenamiento.Size = new System.Drawing.Size(193, 29);
             this.txt_almacenamiento.TabIndex = 0;
@@ -274,7 +274,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel5);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Decisiones_Distribucion_y_almacenamiento_";
             this.Text = "Decisiones_Distribucion_y_almacenamiento_";
             this.Load += new System.EventHandler(this.Decisiones_Distribucion_y_almacenamiento__Load);
