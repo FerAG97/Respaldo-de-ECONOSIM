@@ -46,7 +46,7 @@ namespace Econosim
                     }
                     else
                     {
-                        if (txtNuevaContra.Text.Trim() == txtConfirmacion.Text.Trim())
+                        if (txtNuevaContra.Text.Trim() == txtConfirmacion.Text.Trim() && txtNuevaContra.TextLength > 8 && txtNuevaContra.TextLength < 15)
                         {
                             command = new SqlCommand("INSERT INTO usuario (nombre, apellido, nombre_de_usuario, contrasena, emali, numero_de_grupo, tipo_de_Usuario)" + "VALUES('" + txtNuevoNombre.Text + "','" + txtNuevoApellido.Text + "','" + txtNuevoUser.Text + "','" + txtNuevaContra.Text + "','" + txtNuevoCorreo.Text + "','" + txtNumEquipo.Text + "','"+cmbTipoUsuario.Text+"')", conexiónBD.sc);
                             command.ExecuteNonQuery();
@@ -63,10 +63,15 @@ namespace Econosim
                         }
                         else
                         {
-                            MessageBox.Show("LLENE TODOS LOS CAMPOS", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            MessageBox.Show("LAS CONTRASEÑAS NO COINCIDEN", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                             txtNuevaContra.Clear();
                             txtConfirmacion.Clear();
                         }
+
+                        if(txtNuevoNombre.TextLength < 2){
+
+                        }
+
 
                     }
                 }
@@ -99,7 +104,7 @@ namespace Econosim
 
         private void txtNuevoNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            if ((e.KeyChar >= 33 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
             {
                 MessageBox.Show("Solo letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
@@ -109,7 +114,7 @@ namespace Econosim
 
         private void txtNuevoApellido_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            if ((e.KeyChar >= 33 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
             {
                 MessageBox.Show("Solo letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
@@ -171,12 +176,17 @@ namespace Econosim
 
         private void txtNuevaContra_TextChanged(object sender, EventArgs e)
         {
-            txtNuevaContra.MaxLength = 10;
+            txtNuevaContra.MaxLength = 15;
         }
 
         private void txtConfirmacion_TextChanged(object sender, EventArgs e)
         {
-            txtNuevaContra.MaxLength = 10;
+            txtNuevaContra.MaxLength = 15;
+        }
+
+        private void txtNuevoNombre_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

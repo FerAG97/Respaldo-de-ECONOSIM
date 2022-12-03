@@ -85,12 +85,20 @@ namespace Econosim
         {
             con.Open();
 
-            string query = "insert into usuario values('" + txtnombreAdm.Text + "','" + txtapellidoAdm.Text + "','" + txtusuarioAdm.Text + "'," + txtcontraAdm.Text + ",'" + txtemailAdm.Text + "','" + txtgrupoAdm.Text + "', '" + cmbTipodeUsu.Text + "')";
-            SqlCommand comando = new SqlCommand(query, con);
-            comando.ExecuteNonQuery();
-            MessageBox.Show("Registro Añadido");
-            llenar_tabla();
-            con.Close();
+            if (txtnombreAdm.Text == String.Empty || txtapellidoAdm.Text == String.Empty || txtusuarioAdm.Text == String.Empty || txtemailAdm.Text == String.Empty || cmbTipodeUsu.Text == String.Empty)
+            {
+                MessageBox.Show("LLENE TODOS LOS CAMPOS", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                string query = "insert into usuario values('" + txtnombreAdm.Text + "','" + txtapellidoAdm.Text + "','" + txtusuarioAdm.Text + "'," + txtcontraAdm.Text + ",'" + txtemailAdm.Text + "','" + txtgrupoAdm.Text + "', '" + cmbTipodeUsu.Text + "')";
+                SqlCommand comando = new SqlCommand(query, con);
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Registro Añadido");
+                llenar_tabla();
+                con.Close();
+            }
+
         }
 
         private void circlebutton2_Click(object sender, EventArgs e)
@@ -134,6 +142,67 @@ namespace Econosim
             catch (Exception ex)
             {
                 MessageBox.Show("ERROR AL MODIFICAR " + ex.Message);
+            }
+        }
+
+        private void txtnombreAdm_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 33 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+
+        }
+
+        private void txtapellidoAdm_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 33 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtusuarioAdm_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo letras minusculas", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtcontraAdm_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo letras y numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtemailAdm_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 45) || (e.KeyChar >= 58 && e.KeyChar <= 63) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo se acepta @, ., letras y numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtgrupoAdm_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 45) || (e.KeyChar >= 58 && e.KeyChar <= 63) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo se acepta @, ., letras y numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
             }
         }
     }

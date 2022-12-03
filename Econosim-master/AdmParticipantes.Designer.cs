@@ -178,6 +178,7 @@
             this.txtapellidoAdm.Name = "txtapellidoAdm";
             this.txtapellidoAdm.Size = new System.Drawing.Size(180, 26);
             this.txtapellidoAdm.TabIndex = 4;
+            this.txtapellidoAdm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtapellidoAdm_KeyPress);
             // 
             // label8
             // 
@@ -211,6 +212,7 @@
             this.txtnombreAdm.Name = "txtnombreAdm";
             this.txtnombreAdm.Size = new System.Drawing.Size(180, 26);
             this.txtnombreAdm.TabIndex = 2;
+            this.txtnombreAdm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombreAdm_KeyPress);
             // 
             // txtusuarioAdm
             // 
@@ -220,6 +222,7 @@
             this.txtusuarioAdm.Name = "txtusuarioAdm";
             this.txtusuarioAdm.Size = new System.Drawing.Size(180, 26);
             this.txtusuarioAdm.TabIndex = 8;
+            this.txtusuarioAdm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtusuarioAdm_KeyPress);
             // 
             // txtcontraAdm
             // 
@@ -230,6 +233,7 @@
             this.txtcontraAdm.PasswordChar = '*';
             this.txtcontraAdm.Size = new System.Drawing.Size(180, 26);
             this.txtcontraAdm.TabIndex = 9;
+            this.txtcontraAdm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcontraAdm_KeyPress);
             // 
             // Label1
             // 
@@ -264,6 +268,7 @@
             this.txtgrupoAdm.Name = "txtgrupoAdm";
             this.txtgrupoAdm.Size = new System.Drawing.Size(180, 26);
             this.txtgrupoAdm.TabIndex = 11;
+            this.txtgrupoAdm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtgrupoAdm_KeyPress);
             // 
             // label5
             // 
@@ -297,6 +302,7 @@
             this.txtemailAdm.Name = "txtemailAdm";
             this.txtemailAdm.Size = new System.Drawing.Size(180, 26);
             this.txtemailAdm.TabIndex = 6;
+            this.txtemailAdm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtemailAdm_KeyPress);
             // 
             // label3
             // 

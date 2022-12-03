@@ -233,6 +233,7 @@ namespace Econosim
             this.txtNuevoNombre.Name = "txtNuevoNombre";
             this.txtNuevoNombre.Size = new System.Drawing.Size(311, 24);
             this.txtNuevoNombre.TabIndex = 3;
+            this.txtNuevoNombre.TextChanged += new System.EventHandler(this.txtNuevoNombre_TextChanged);
             this.txtNuevoNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNuevoNombre_KeyPress);
             // 
             // Label3
