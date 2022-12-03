@@ -46,7 +46,7 @@ namespace Econosim
                     }
                     else
                     {
-                        if (txtNuevaContra.Text.Trim() == txtConfirmacion.Text.Trim() && txtNuevaContra.TextLength > 8 && txtNuevaContra.TextLength < 15)
+                        if (txtNuevaContra.Text.Trim() == txtConfirmacion.Text.Trim() && txtNuevaContra.TextLength > 8 && txtNuevaContra.TextLength < 15 && txtNuevoNombre.TextLength > 2 && txtNuevoNombre.TextLength < 35 && txtNuevoUser.TextLength > 5 && txtNuevoUser.TextLength < 15)
                         {
                             command = new SqlCommand("INSERT INTO usuario (nombre, apellido, nombre_de_usuario, contrasena, emali, numero_de_grupo, tipo_de_Usuario)" + "VALUES('" + txtNuevoNombre.Text + "','" + txtNuevoApellido.Text + "','" + txtNuevoUser.Text + "','" + txtNuevaContra.Text + "','" + txtNuevoCorreo.Text + "','" + txtNumEquipo.Text + "','"+cmbTipoUsuario.Text+"')", conexiónBD.sc);
                             command.ExecuteNonQuery();
@@ -59,18 +59,39 @@ namespace Econosim
                             txtNuevaContra.Clear();
                             txtConfirmacion.Clear();
                             txtNumEquipo.Clear();
+                            txtConfirmacion.Clear();
                             txtNuevoNombre.Focus();
                         }
                         else
                         {
-                            MessageBox.Show("LAS CONTRASEÑAS NO COINCIDEN", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                            txtNuevaContra.Clear();
-                            txtConfirmacion.Clear();
+                            if (txtNuevaContra.Text.Trim() != txtConfirmacion.Text.Trim()) 
+                            {
+                                MessageBox.Show("LAS CONTRASEÑAS NO COINCIDEN", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                txtNuevaContra.Clear();
+                                txtConfirmacion.Clear();
+                                
+                            }
+                            else if (txtNuevaContra.TextLength < 8 || txtNuevaContra.TextLength>15)
+                            {
+                                MessageBox.Show("LA LONGITUD DE CONTRASEÑA DEBE SER MAYOR A 8 Y MENOR A 15 CARACTERES", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                txtNuevaContra.Clear();
+                                txtConfirmacion.Clear();
+
+
+                            }
+                            else if(txtNuevoNombre.TextLength < 2 && txtNuevoNombre.TextLength > 35)
+                            {
+                                MessageBox.Show("LA LONGITUD DE NOMBRES DEBE SER MAYOR A 2 Y MENOR A 35 CARACTERES", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                txtNuevoNombre.Clear();
+
+                            }
+                            else if(txtNuevoUser.TextLength < 5 && txtNuevoUser.TextLength > 15) 
+                            {
+                                MessageBox.Show("LA LONGITUD DE USUARIO DEBE SER MAYOR A 2 Y MENOR A 15 CARACTERES", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                txtNuevoUser.Clear();
+                            }
                         }
 
-                        if(txtNuevoNombre.TextLength < 2){
-
-                        }
 
 
                     }

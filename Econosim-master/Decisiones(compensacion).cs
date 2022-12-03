@@ -62,10 +62,6 @@ namespace Econosim
 
         private void circlebutton3_Click(object sender, EventArgs e)
         {
-            /*Form decisiones_alamcen = new Decisiones_Almacen_Distribucion_();
-            decisiones_alamcen.Show();
-            this.Hide();
-            */
             Decisiones_Distribucion_y_almacenamiento_ decisiones_Distribucion_Y_Almacenamiento_ = new Decisiones_Distribucion_y_almacenamiento_();
             decisiones_Distribucion_Y_Almacenamiento_.Show();
             this.Hide();
@@ -92,8 +88,6 @@ namespace Econosim
                         SqlCommand cmd = new SqlCommand("insert into compensacion (descripcion_de_recompensa, valor_recompensa, fecha_recompensa) values ('" + textBox1.Text + "','" + Convert.ToUInt32(textBox2.Text) + "','" + textBox4.Text + "')", con);
 
                         cmd.CommandType = CommandType.Text;
-
-
 
                         con.Open();
 
@@ -165,7 +159,7 @@ namespace Econosim
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            if ((e.KeyChar >= 33 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
             {
                 MessageBox.Show("Solo letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
