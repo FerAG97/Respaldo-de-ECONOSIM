@@ -44,6 +44,8 @@ namespace Econosim
             lblNomPerfil.Text = InicioSesión.nombre + " " + InicioSesión.apellido;
             lblCorreoPerfil.Text = InicioSesión.correo;
             lblEquipoPerfil.Text = InicioSesión.equipo;
+
+            conexiónBD.cargarDatosEquipo(dataGridView1, "usuario", InicioSesión.equipo);
         }
 
         private void label7_Click(object sender, EventArgs e)
